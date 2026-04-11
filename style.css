@@ -68,7 +68,7 @@ input, form, button {
 }
 button{
   display: inline-flex;
-  justify-content: center; /* Centers horizontally */
+  justify-content: center;
   align-items: center;
 }
 
@@ -89,12 +89,14 @@ article{
   grid-template-rows: subgrid;
   grid-row: span 3;
   gap: 1em;
-
-  background-color:white;
   border-radius: 12px;
   
 
 
+}
+
+.projects article{
+  background-color: white;
 }
 
 article h2 {
