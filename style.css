@@ -1,6 +1,13 @@
 :root {
-  --color-accent: #171740;
+  color-scheme: light dark;
+  --color-accent:  light-dark(oklch(42.922% 0.07337 192.226), oklch(65% 0.09 200));
+
+  --color-highlight: light-dark(
+    oklch(85% 0.05 192),  
+    oklch(40% 0.09 201.200)
+  );
 }
+
 
 input {accent-color: var(--color-accent);
 }
@@ -16,11 +23,18 @@ body {
 }
 
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+
 nav {
   margin-top: 1em;
   display: flex;
   margin-bottom: 1em;
-  border-bottom: 1px solid #20171c;
+  border-bottom: 2px solid  var(--color-accent);
 }
 
 nav a {
@@ -33,14 +47,15 @@ nav a {
 
 .current {
   font-weight: bold;
-  border-bottom: 0.4em solid #20171c;
+  border-bottom: 0.4em var(--color-accent);
   padding-bottom: 0.1em; 
 }
 
 nav a:hover {
-  border-bottom: 0.4em solid var(--color-accent);
+  border-bottom: 0.4em solid  var(--color-accent);
   background-color: var(--color-accent); 
-  background-color: oklch(from var(--color-accent) 95% 0.05 h);
+  /* background-color: oklch(from var(--color-accent) 40% 0.05 h); */
+  background-color: var(--color-highlight);
 }
 
 input, form, button {
@@ -48,7 +63,7 @@ input, form, button {
 }
 
 .wrapper {
-  background-color: lightblue; 
+  background-color: var(--color-highlight); 
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0.5em;
@@ -78,11 +93,14 @@ button{
   grid-auto-rows: auto auto 1fr;
   gap: 1em;
 
-  background-color: lightblue;
+  background-color: var(--color-highlight);
   padding: 1em;
   border-radius: 12px;
 
 }
+
+
+
 
 article{
   display: grid;
@@ -96,7 +114,7 @@ article{
 }
 
 .projects article{
-  background-color: white;
+  background-color: light-dark(white,rgb(0, 0, 0));
 }
 
 article h2 {
@@ -110,7 +128,6 @@ h1 {
   font-style: bold;
 
 
-  color: var(--color-accent);
   font-size: 400%;
   line-height: 1.1;
   text-wrap: balance;
@@ -120,14 +137,13 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6{
-  color: var(--color-accent);
   line-height: 1.1;
   text-wrap: balance;
 }
 
 .highlight { 
   text-align: left; 
-  background-color: lightblue; 
+  background-color: var(--color-highlight); 
   padding: 0 1rem; 
   list-style-type: none; 
   padding-bottom: 0.5rem;
@@ -147,7 +163,7 @@ h1, h2, h3, h4, h5, h6{
   grid-template-columns: 1fr auto;
   align-items: start;
   gap: .1rem;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px  var(--color-accent);
   margin-bottom: 0.1rem; 
 }
 
