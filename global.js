@@ -15,10 +15,7 @@ let pages = [
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
-const BASE_PATH =
-  location.hostname === "localhost" || location.hostname === "127.0.0.1"
-    ? "/"
-    : "/portfolio/";
+const BASE_PATH = "/"
 
 for (let p of pages) {
   let url = p.url;
