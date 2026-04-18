@@ -17,7 +17,7 @@ document.body.prepend(nav);
 
 const BASE_PATH =
   location.hostname === "localhost" || location.hostname === "127.0.0.1"
-    ? "/"
+    ? "./"
     : "/portfolio/";
 
 for (let p of pages) {
@@ -49,7 +49,7 @@ document.body.insertAdjacentHTML(
   <label class="color-scheme">
     Theme:
     <select>
-      <option value="auto">Automatic</option>
+      <option value="light dark">Automatic</option>
       <option value="light">Light</option>
       <option value="dark">Dark</option>
     </select>
