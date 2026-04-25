@@ -199,13 +199,20 @@ h1, h2, h3, h4, h5, h6{
   margin-top: 2rem;
 }
 
-#profile-stats dl {
+#profile-stats {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+#profile-stats dl {
+  display: contents;
 }
 
 #profile-stats dt {
   grid-row: 1;
+  text-transform: uppercase;
 }
 
 #profile-stats dd {
