@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Project 1",
+    "year": "2022",
+    "image": "../images/project1.png",
+    "description": "I explored how the macro-nutritional composition of sausage and bacon products changes as price increases. By analyzing price per calorie, I found that as products become more expensive, they tend to be leaner. Protein increases while fat decreases. To highlight this relationship, I grouped products into equally sized price bins and graphed the average macronutrient proportion using a smoothed line chart. This made it easy to pinpoint when the two macronutrients crossed over, or when protein overtook fat, emphasizing how higher-priced options shift toward higher protein content."
+  },
+  {
+    "title": "Project 2",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 2"
+  },
+  {
+    "title": "Project 3",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 3"
+  },
+  {
+    "title": "Project 4",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 4"
+  },
+  {
+    "title": "Project 5",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 5"
+  },
+  {
+    "title": "Project 6",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 6"
+  },
+  {
+    "title": "Project 7",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 7"
+  },
+  {
+    "title": "Project 8",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 8"
+  },
+  {
+    "title": "Project 9",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 9"
+  },
+  {
+    "title": "Project 10",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 10"
+  },
+  {
+    "title": "Project 11",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 11"
+  },
+  {
+    "title": "Project 12",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Description 12"
+  }
+]
