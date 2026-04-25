@@ -1,21 +1,23 @@
-import { fetchJSON, renderProjects, fetchGithubData } from './global.js';
+import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 
 const projects = await fetchJSON('./lib/projects.json');
 
-const titleElement = document.querySelector('.projects-title');
-if (titleElement) {
-  titleElement.textContent = `${projects.length} Project${projects.length !== 1 ? 's' : ''}`;
+if (projects) {
+  const titleElement = document.querySelector('.projects-title');
+  if (titleElement) {
+    titleElement.textContent = `${projects.length} Project${projects.length !== 1 ? 's' : ''}`;
+  }
+
+  const latestProjects = projects.slice(0, 3);
+
+  const projectsContainer = document.querySelector('.projects');
+  if (projectsContainer) {
+    renderProjects(latestProjects, projectsContainer, 'h2');
+  }
 }
 
+const githubData = await fetchGitHubData('kmalva');
 
-const latestProjects = projects.slice(0, 3);
-
-const projectsContainer = document.querySelector('.projects');
-if (projectsContainer) {
-  renderProjects(latestProjects, projectsContainer, 'h2');
-}
-
-const githubData = await fetchGithubData('giorgianicolaou');
 const profileStats = document.querySelector('#profile-stats');
 
 if (profileStats) {
