@@ -252,20 +252,19 @@ h6 {
 }
 
 .legend {
-  flex: 0 0 auto;
-  width: fit-content;
-  max-width: 14em;
+  flex: 1;
 
   display: grid;
-  grid-template-columns: auto;
-  gap: 0.4em;
+  grid-template-columns: repeat(auto-fit, minmax(8em, max-content));
+  gap: 0.5em 1em;
+
+  width: 100%;
+  margin: 0;
 
   background-color: white;
   color: black;
   border: 1px solid grey;
   padding: 0.6em;
-  margin: 0;
-
   border-radius: 10px;
   list-style: none;
 
