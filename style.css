@@ -18,6 +18,7 @@ body {
   margin-top: 3rem;
   font: 100%/1.6 system-ui;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 .color-scheme {
@@ -141,6 +142,7 @@ h5,
 h6 {
   line-height: 1.1;
   text-wrap: balance;
+  text-align: center;
 }
 
 .highlight { 
