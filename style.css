@@ -252,12 +252,12 @@ h6 {
   flex-wrap: wrap;
   align-items: center;
 
-  gap: 0.5em 1em;
+  gap: 0.9em 2rem;   /* more spacing */
 
   background-color: white;
   color: black;
   border: 1px solid grey;
-  padding: 0.6em;
+  padding: 0.8em 1em;
   margin: 0;
   border-radius: 10px;
   list-style: none;
@@ -268,7 +268,7 @@ h6 {
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.6em;       /* space inside each item */
   cursor: pointer;
   white-space: nowrap;
 }
