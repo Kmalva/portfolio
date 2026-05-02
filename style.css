@@ -247,21 +247,30 @@ h6 {
 .legend {
   flex: 1;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  gap: 0.75em 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
 
-  width: 100%;
+  align-items: center;
+  gap: 0.75em;
 
   background-color: white;
   color: black;
   border: 1px solid grey;
-  padding: 0.6em;
+  padding: 0.8em 1em;
   margin: 0;
   border-radius: 10px;
   list-style: none;
 
   font-size: 0.8rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  white-space: nowrap;
 }
 
 .legend-item {
