@@ -451,4 +451,14 @@ circle.selected {
     stroke-dashoffset: -8;
   }
 }
+.projects article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.projects article a {
+  margin-top: auto;
+  align-self: flex-start;
+}
 }

@@ -6,10 +6,11 @@
     "description": "I explored how the macro-nutritional composition of sausage and bacon products changes as price increases. By analyzing price per calorie, I found that as products become more expensive, they tend to be leaner. Protein increases while fat decreases. To highlight this relationship, I grouped products into equally sized price bins and graphed the average macronutrient proportion using a smoothed line chart. This made it easy to pinpoint when the two macronutrients crossed over, or when protein overtook fat, emphasizing how higher-priced options shift toward higher protein content."
   },
   {
-    "title": "Project 2",
-    "year": "2023",
-    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-    "description": "Description 2"
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "../images/lab 7 ss.png",
+    "description": "Interactive Mapbox and D3 visualization showing the BlueBike traffic patterns in Boston and Cambridge. The size of the circle shows traffic volume for each station and the color shows if the stations have more arrivals or departures as time passes in the day..",
+    "url": "https://kmalva.github.io/bikewatching/"
   },
   {
     "title": "Project 3",
